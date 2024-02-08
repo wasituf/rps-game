@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Below is the code that connects the js file to html file-->
+    <link rel="stylesheet" href="rps.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- The name is written below -->
+      <div class="card">
+        <h1>ROCK • PAPER • SCISSORS</h1>
+      </div>
+
+      <div class="card choices">
+        <!-- The 3 buttons are below -->
+        <button onclick="playGame('ROCK')">ROCK</button>
+        <button onclick="playGame('PAPER')">PAPER</button>
+        <button onclick="playGame('SCISSORS')">SCISSORS</button>
+      </div>
+
+      <div class="card scoreboard">
+        <!--The scoreboard is written below-->
+        <div class="selections">
+          <p class="player-name">PLAYER: <span id="playerDisplay"></span></p>
+          <p class="player-name">
+            COMPUTER: <span id="computerDisplay"></span>
+          </p>
+        </div>
+        <div id="resultDisplay"></div>
+      </div>
+    </div>
+  </body>
+
+  <!--Below is the code that connects the js file to html file-->
+  <script src="rps.js"></script>
+</html>
+
